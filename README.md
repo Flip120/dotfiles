@@ -4,13 +4,13 @@ My personal dotfiles
 ## Installation
 
 ``` sh
-FRESH_LOCAL_SOURCE=flip120/dotfiles bash -c "`curl -sL https://get.freshshell.com`"
+FRESH_LOCAL_SOURCE=Flip120/dotfiles bash -c "`curl -sL https://get.freshshell.com`"
 ```
 
 OR
 
 ```sh
-FRESH_LOCAL_SOURCE=flip120/dotfiles bash -c "`wget -q https://get.freshshell.com -O -`"
+FRESH_LOCAL_SOURCE=Flip120/dotfiles bash -c "`wget -q https://get.freshshell.com -O -`"
 ```
 
 My dotfiles are managed by [fresh].
