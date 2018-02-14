@@ -120,6 +120,9 @@ Plugin 'mileszs/ack.vim' " ack support from vim
 Plugin 'flazz/vim-colorschemes'
 Plugin 'tpope/vim-vividchalk'
 
+" Unity
+Plugin 'OmniSharp/omnisharp-vim:'
+Plugin 'Valloric/YouCompleteMe'
 call vundle#end()
 
 " Or use vividchalk
