@@ -40,20 +40,6 @@ set shiftwidth=2
 set expandtab
 set number
 
-set ruler                         " Show cursor position.
-
-set incsearch                     " Highlight matches as you type.
-set hlsearch                      " Highlight matches.
-" turn off search highlight"
-nnoremap <leader><space> :nohlsearch<CR>
-
-set wrap                          " Turn on line wrapping.
-set scrolloff=3                   " Show 3 lines of context around the cursor.
-
-set title                         " Set the terminal's title
-set lazyredraw                    " redraw only when we need to."
-set showmatch                     " highlight matching [{()}]"
-
 if !has("gui_running")            " Don't set titleold
 set titleold=
 if &term == "xterm" && &t_ts == ""
@@ -141,6 +127,9 @@ nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
+
+" open buffer files and open one by pressing number + intro
+nnoremap <Leader>b :ls<CR>:b
 
 " Map leader to ,
 let mapleader=","
