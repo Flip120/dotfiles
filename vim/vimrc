@@ -138,4 +138,11 @@ let mapleader=","
 command WQ wq
 command Wq wq
 command W w
-c
+
+" Enable copy and paster in search mode in vim
+let &clipboard = has('unnamedplus') ? 'unnamedplus' : 'unnamed'
+
+" Change cursor shape in different modes
+let &t_SI.=“\e[5 q”
+let &t_SR.=“\e[4 q”
+let &t_EI.=“\e[1 q”
