@@ -150,3 +150,7 @@ let &t_EI.="\e[1 q"
 " Paste and not copy the selectipo
 noremap p pgvy
 
+" Ack with Ag
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif

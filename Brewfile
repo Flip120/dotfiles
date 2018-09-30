@@ -33,6 +33,7 @@ brew 'tree'
 brew 'vim', args: ['--without-ruby']
 brew 'wakeonlan'
 brew 'wget'
+brew 'tmux'
 
 cask 'android-file-transfer'
 cask 'caption'
@@ -70,17 +71,4 @@ brew 'neovim'
 tap 'buo/cask-upgrade'
 
 brew 'mas'
-mas 'Twitter', id: 409789998
-mas 'iPhoto', id: 408981381
-mas 'Telegram', id: 747648890
-mas 'GarageBand', id: 682658836
-mas 'iMovie', id: 408981434
-mas 'LINE', id: 539883307
-mas 'Textual 5', id: 896450579
-mas 'Pages', id: 409201541
-mas 'Keynote', id: 409183694
-mas 'Todoist', id: 585829637
-mas 'StreamCloud', id: 894578573
-mas 'Numbers', id: 409203825
 mas 'Whatsapp', id: 1147396723
-mas 'Spark', id: 1176895641
