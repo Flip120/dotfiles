@@ -1,1 +1,20 @@
-[[ -s ~/.bashrc ]] && source ~/.bashrc
+# [[ -s ~/.bashrc ]] && source ~/.bashrc
+alias glogone="git log --oneline"
+alias vim="vim -S ~/.vimrc"
+alias gorockola="ssh carlos.cabanero@rockola.peertransfer.in"
+alias goapache="ssh carlos.cabanero@apache.peertransfer.in"
+alias app="gotoapp"
+alias lib="gotolib"
+
+function gotoapp {
+  cd ~/Projects/code/platform/apps/$1
+}
+
+function gotolib {
+  cd ~/Projects/code/platform/libs/$1
+}
+
+parse_git_branch() {
+     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
