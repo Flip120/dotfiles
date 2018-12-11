@@ -1,8 +1,6 @@
 # [[ -s ~/.bashrc ]] && source ~/.bashrc
 alias glogone="git log --oneline"
 alias vim="vim -S ~/.vimrc"
-alias gorockola="ssh carlos.cabanero@rockola.peertransfer.in"
-alias goapache="ssh carlos.cabanero@apache.peertransfer.in"
 alias app="gotoapp"
 alias lib="gotolib"
 
