@@ -1,9 +1,8 @@
 [user]
-  email = <%= ENV["GIT_EMAIL"] || "josacar@users.noreply.github.com" %>
-  name = Jose Luis Salas
-  signingkey = <%= ENV["GIT_GPG_KEY_ID"] || "926C5673" %>
+  email = <%= ENV["GIT_EMAIL"] || "Flip120@users.noreply.github.com" %>
+  name = Carlos Cabañero Chaparro
 [github]
-  user = josacar
+  user = Flip120
 [core]
   pager = less -FRSX
   whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
@@ -17,7 +16,8 @@
   diff = auto
   status = auto
   ui = true
-  pager = trufacolor "branch"]
+  pager = true
+[color "branch"]
   current = yellow reverse
   local   = yellow
   remote  = green

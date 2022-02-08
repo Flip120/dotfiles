@@ -80,7 +80,6 @@ Plugin 'Shougo/vimproc', { 'do': 'make' }
 Plugin 'wincent/ferret', { 'on': ['Ack', 'Acks'] }
 Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plugin 'junegunn/fzf.vim'
-Plugin 'scrooloose/nerdtree' " A tree explorer
 Plugin 'ervandew/supertab' " Perform all your vim insert mode completions with Ta    b
 Plugin 'godlygeek/tabular' " text filtering and alignment
 Plugin 'bling/vim-airline' " lean & mean status/tabline for vim that's light as a    ir
@@ -107,7 +106,6 @@ Plugin 'tpope/vim-vividchalk'
 
 " Unity
 Plugin 'OmniSharp/omnisharp-vim:'
-Plugin 'Valloric/YouCompleteMe'
 call vundle#end()
 
 " Or use vividchalk

@@ -1,3 +1,0 @@
-if [ "$(uname)" = "Darwin" ]; then
-  defaults write com.apple.desktopservices DSDontWriteNetworkStores true
-fi

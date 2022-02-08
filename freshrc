@@ -2,15 +2,8 @@
 
 # Bin files
 fresh freshshell/fresh bin/fresh --bin
-fresh bin/\* --bin
-
-# Some shell aliases
-fresh shell/aliases/\*
-fresh shell/\*
 
 fresh-options --file=~/.bashrc --marker=#
-  fresh shell/completions/\*
-  fresh shell/bashrc/\*
   fresh freshshell/fresh contrib/source-build.sh
   fresh rupa/z z.sh
 
@@ -24,22 +17,16 @@ fresh config/\* --file --filter=erb
 # Vim
 fresh vim/vimrc --file
 
-# OpenSSH
-fresh ssh/config --file=~/.ssh/config
-
-# Gemfile
-fresh Gemfile --file=~/Gemfile
+# Tmux
+fresh tmux/\* --file
 
 # Brewfile
 fresh Brewfile --file=~/Brewfile
 
-# plist files
-fresh plist/com.googlecode.iterm2.plist --file=~/Library/Preferences/com.googlecode.iterm2.plist
-
 install_brew(){
   if [ "$(uname)" = "Darwin" ] && ! which brew > /dev/null 2>&1; then
     echo 'Installing brew'
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     cd "$HOME" && brew bundle
   fi
 }
